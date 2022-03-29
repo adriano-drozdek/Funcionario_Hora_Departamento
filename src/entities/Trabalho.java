@@ -69,4 +69,7 @@ public class Trabalho {
 		contratos.add(contrato);
 	}
 
+	public void removeContrato(ContratoHora contrato) {
+		contratos.remove(contrato);
+	}
 }
