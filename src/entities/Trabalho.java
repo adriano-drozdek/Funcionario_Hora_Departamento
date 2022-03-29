@@ -1,6 +1,7 @@
 package entities;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import entities.enuns.NivelDeTrabalho;
@@ -68,9 +69,15 @@ public class Trabalho {
 	public void removeContrato(ContratoHora contrato) {
 		contratos.remove(contrato);
 	}
-	
 
 	public double renda(int year, int month) {
+		double soma = SalarioBase;
+		Calendar cal = Calendar.getInstance();
+		for (ContratoHora x : contratos) {
+			cal.setTime(x.getData());
+			soma = x.valorTotal();
+		}
 
+		return soma;
 	}
 }
