@@ -75,7 +75,11 @@ public class Trabalho {
 		Calendar cal = Calendar.getInstance();
 		for (ContratoHora x : contratos) {
 			cal.setTime(x.getData());
-			soma = x.valorTotal();
+			int x_year = cal.get(Calendar.YEAR);
+			int x_month = 1 + cal.get(Calendar.MONTH);
+			if (year == x_year && month == x_month) {
+				soma = x.valorTotal();
+			}
 		}
 
 		return soma;
