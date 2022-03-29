@@ -65,4 +65,8 @@ public class Trabalho {
 		this.contratos = contratos;
 	}
 
+	public void addContrato(ContratoHora contrato) {
+		contratos.add(contrato);
+	}
+
 }
