@@ -68,4 +68,9 @@ public class Trabalho {
 	public void removeContrato(ContratoHora contrato) {
 		contratos.remove(contrato);
 	}
+	
+
+	public double renda(int year, int month) {
+
+	}
 }
