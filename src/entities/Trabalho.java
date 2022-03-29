@@ -61,10 +61,6 @@ public class Trabalho {
 		return contratos;
 	}
 
-	public void setContratos(List<ContratoHora> contratos) {
-		this.contratos = contratos;
-	}
-
 	public void addContrato(ContratoHora contrato) {
 		contratos.add(contrato);
 	}
