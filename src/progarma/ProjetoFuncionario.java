@@ -44,6 +44,7 @@ public class ProjetoFuncionario {
 			System.out.println("Quantidade de horas: ");
 			int horas = sc.nextInt();
 			ContratoHora contrato = new ContratoHora(dataContrato, valorHora, horas);
+			trabalho.addContrato(contrato);
 		}
 		sc.close();
 	}
