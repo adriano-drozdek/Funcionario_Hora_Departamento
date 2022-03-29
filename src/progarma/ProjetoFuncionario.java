@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entities.ContratoHora;
 import entities.Departamento;
 import entities.Trabalho;
 import entities.enuns.NivelDeTrabalho;
@@ -37,6 +38,12 @@ public class ProjetoFuncionario {
 			System.out.println("Contrato N° " + 1);
 			System.out.println("Data (DD/MM/YYYY): ");
 			Date dataContrato = sdf.parse(sc.next());
+
+			System.out.println("Valor por hora: ");
+			double valorHora = sc.nextDouble();
+			System.out.println("Quantidade de horas: ");
+			int horas = sc.nextInt();
+			ContratoHora contrato = new ContratoHora(dataContrato, valorHora, horas);
 		}
 		sc.close();
 	}
