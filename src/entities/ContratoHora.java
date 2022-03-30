@@ -10,7 +10,7 @@ public class ContratoHora {
 
 	public ContratoHora(Date data, Double valorHora, Integer hora) {
 		this.data = data;
-		ValorHora = valorHora;
+		this.ValorHora = valorHora;
 		this.hora = hora;
 	}
 
@@ -31,7 +31,7 @@ public class ContratoHora {
 	}
 
 	public void setValorHora(Double valorHora) {
-		ValorHora = valorHora;
+		this.ValorHora = valorHora;
 	}
 
 	public Integer getHora() {

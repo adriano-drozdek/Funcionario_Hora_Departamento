@@ -18,7 +18,7 @@ public class Trabalho {
 	public Trabalho(String nome, NivelDeTrabalho nivel, Double salarioBase, Departamento departamernto) {
 		this.nome = nome;
 		this.nivel = nivel;
-		SalarioBase = salarioBase;
+		this.SalarioBase = salarioBase;
 		this.departamernto = departamernto;
 	}
 
@@ -47,7 +47,7 @@ public class Trabalho {
 	}
 
 	public void setSalarioBase(Double salarioBase) {
-		SalarioBase = salarioBase;
+		this.SalarioBase = salarioBase;
 	}
 
 	public Departamento getDepartamernto() {
@@ -78,7 +78,7 @@ public class Trabalho {
 			int x_year = cal.get(Calendar.YEAR);
 			int x_month = 1 + cal.get(Calendar.MONTH);
 			if (year == x_year && month == x_month) {
-				soma = x.valorTotal();
+				soma += x.valorTotal();
 			}
 		}
 
